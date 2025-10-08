@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  background: #fbe9d0;
+  overflow: hidden;
+}
+
+.escenario {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: skyblue;
+  overflow: hidden;
+}
+
+.carretera {
+  position: absolute;
+  bottom: 0;
+  width: 200%;
+  height: 150px;
+  background: url('/images/carretera.png') repeat-x;
+  background-size: cover;
+  animation: moverCarretera 2s linear infinite;
+}
+
+.chibi {
+  position: absolute;
+  bottom: 130px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 100px;
+  background: url('/images/anubis.png');
+  animation: run 1s steps(12) infinite;
+}
+
+@keyframes run {
+  0% { background-position-x: 0; }
+  100% { background-position-x: -1200px; }
+}
+
+@keyframes moverCarretera {
+  0% { background-position-x: 0; }
+  100% { background-position-x: -800px; }
+}
+
