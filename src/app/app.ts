@@ -6,10 +6,11 @@ import { NavBar } from './components/nav-bar/nav-bar';
 import { Carrera } from './components/carrera/carrera';
 import { ListaPersonajes } from './components/lista-personajes/lista-personajes';
 import { TarjetaPersonajes } from './components/tarjeta-personajes/tarjeta-personajes';
+import { Formulario } from './components/formulario/formulario';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, CommonModule, Matatopos, NgIf, NavBar, Carrera, ListaPersonajes, TarjetaPersonajes],
+  imports: [RouterOutlet, CommonModule, Matatopos, NgIf, NavBar, Carrera, ListaPersonajes, TarjetaPersonajes, Formulario],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
